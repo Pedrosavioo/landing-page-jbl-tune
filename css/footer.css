@@ -1,0 +1,170 @@
+footer{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark);
+}
+
+.img-footer{
+    width: 10vw;
+    margin-left: 45%;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+}
+
+.footer-pags{
+    list-style: none;
+}
+
+.footer-pags li{
+    margin:5rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.add-content-product:hover::after{
+    content: "More product information";
+    position: absolute;
+    top: 548%;
+    left: 50%;
+    background-color: var(--color-prymary);
+    padding: .5rem;
+    border-radius: 1rem;
+    color: var(--color-secondary);
+    font-size: .8rem;
+}
+
+.add-testimonial:hover::after{
+    content: "Explore Testimonials";
+    position: absolute;
+    top: 548%;
+    left: 65%;
+    background-color: var(--color-prymary);
+    padding: .5rem;
+    border-radius: 1rem;
+    color: var(--color-secondary);
+    font-size: .8rem;
+}
+
+.footer-social{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer-social li{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.icon{
+    width: 2rem;
+    margin-left: 1.5rem;
+}
+
+#footer-bottom{
+    text-align: center;
+    margin: 2rem;
+}
+
+#footer-bottom p {
+    margin-top: 1rem;
+    color: var(--color-tertiary);
+}
+
+/* Tablet */
+@media (min-width: 750px){
+    .footer-pags{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    .footer-social{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .img-footer{
+        width: 10vw;
+        max-width: 80px;
+        margin-left: 46%;
+        margin-top: 2rem;
+        border-radius: 0.3rem;
+    }
+
+    #footer-bottom{
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 900px){
+    footer{
+        height: 250px;
+        padding-bottom: 2rem;
+    }
+
+    #footer-top{
+        width: 90vw;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+    .footer-pags{
+        display: flex;
+        width: 60vw;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    .footer-pags li{
+        padding-top: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .footer-social{
+        display: flex;
+        width: 20vw;
+        height: 20vh;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 2rem;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .icon{
+        width: 1.5rem;
+        margin-left: .2rem;
+    }
+    
+
+    .img-footer{
+        width: 10vw;
+        height: 10vh;
+        max-height: 50px;
+        margin-left: 0%;
+    }
+
+    #footer-bottom{
+        font-size: 0.8rem;
+        justify-content: space-between;
+        padding: 0 6rem;
+    }
+}

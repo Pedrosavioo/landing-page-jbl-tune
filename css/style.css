@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+:root{
+    --color-prymary: rgb(207, 97, 45);
+    --color-secondary: #F3F3F3;
+    --color-tertiary: #afa6a6;
+    --color-background: linear-gradient(110deg, rgba(0,0,0,1) 23%, rgb(31, 28, 28) 60%);
+    --color-dark: #181717;
+}
+
+body{
+    background: var(--color-background);
+    color: var(--color-prymary);
+    width: 100vw;
+    overflow-x: hidden;
+}

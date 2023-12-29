@@ -1,0 +1,194 @@
+/*
+    .animate{
+        opacity: 0;
+        filter: blur(3px);
+        transition: 1s;
+    }
+
+    .animate-show{
+        filter: blur(0);
+        opacity: 1;
+    }
+*/
+
+
+
+/* Testando animações */
+@keyframes scroll-left {
+    from{
+        filter: blur(8px);
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to{
+        filter: blur(0);
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes scroll-right {
+    from{
+        filter: blur(3px);
+        opacity: 0;
+        translate: 100vw 0;
+    }
+
+    to{
+        filter: blur(0);
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes scroll-top {
+    0%{
+        filter: blur(3px);
+        opacity: 0;
+        translate: 0 -30vw;
+    }
+
+    50%{
+        filter: blur(1px);
+        opacity: .5;
+        translate: 0 0;
+    }
+
+    100%{
+        filter: blur(0);
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes scroll-blur {
+    from{
+        opacity: 0;
+        filter: blur(3px);
+    }
+
+    to{
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+/* HOME ===============================================================*/
+.surface{
+    animation: scroll-blur 1s ease-in-out;
+}
+
+.headphones{
+    animation: scroll-blur 1s ease-in-out;
+}
+
+.img-home{
+    animation: scroll-blur 3s ease-out;
+}
+
+/* FEATURE ============================================================*/
+#features h2{
+    animation: scroll-left 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+#features p{
+    animation: scroll-right 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+.img-feature{
+    animation: scroll-top 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+.adc-img::after{
+    animation: scroll-blur 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+/* DESIGN =============================================================*/
+#design h2{
+    animation: scroll-left 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+#design p{
+    animation: scroll-right 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+#card1{
+    animation: scroll-left 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+}
+
+#card2{
+    animation: scroll-right 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+}
+
+#card3{
+    animation: scroll-left 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+}
+
+/* MODELS =============================================================*/
+#model h2{
+    animation: scroll-left 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+#model p{
+    animation: scroll-right 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+#model img{
+    animation: scroll-top 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+#model button{
+    animation: scroll-blur 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 10%;
+}
+
+/* MODELS =============================================================*/
+#form-feedback{
+    animation: scroll-blur 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+}
+
+#form-feedback h3{
+    animation: scroll-top 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 80%;
+}
+
+#form-feedback p{
+    animation: scroll-left 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+#form-feedback form{
+    animation: scroll-right 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 25%;
+}

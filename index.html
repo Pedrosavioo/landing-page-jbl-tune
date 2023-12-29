@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBL Tune 520BT</title>
+    <link rel="icon" href="assets/logo-JBL.svg" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/model.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form-feedback.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,700;0,800;1,300&display=swap" rel="stylesheet">
+
+    <!-- Description and Keywords-->
+    <meta name="description" content="Descubra a liberdade da transmissão de áudio sem fio do seu smartphone, graças à mais recente tecnologia Bluetooth. Com o JBL Tune 520BTr">
+    <meta name="keywords" content="bluetooth, qualidade, áudio, avançada, JBL, tune">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JBL - Tune 520BT">
+    <meta property="og:description" content="Transmita sem fio som de alta qualidade de seu smartphone sem cabos bagunçados com a ajuda da mais recente tecnologia Bluetooth.">
+    <meta property="og:image" content="https://www.jbl.com.br/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw52862ac6/01.JBL_Tune%20520BT_Product%20Image_Hero_Black.png?sw=535&sh=535">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Animate Scroll-->
+    <link rel="stylesheet" href="css/animate-scroll.css">
+    <script src="js/animate-scroll.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="nav__div">
+                <img src="assets/logo-JBL.svg" alt="Logo JBL" class="logo">
+            </div>
+            <ul class="header__ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#model">Models</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="animate">
+            <h1 class="surface animate">Tune</h1>
+            <h1 class="headphones animate">520BT</h1>
+            <img class="img-home" src="assets/img-home.png" alt="headphone JBL">
+            <span class="add-efect"></span>
+        </section>
+        <section id="features">
+            <h2>JBL Tune 520BT</h2>
+            <p>Transmita sem fio som de alta qualidade de seu smartphone sem cabos bagunçados com a ajuda da mais recente tecnologia Bluetooth.</p>
+            <div>
+                <img class="img-feature animate" src="assets/img-home.png" alt="Headphone JBL">
+                <span class="adc-img"></span>
+            </div>
+        </section>
+        <section id="design">
+            <div>
+                <h2 class="animate">Design</h2>
+                <p class="animate">Lightweight materials and soft ear pads with a padded headband make the headphones comfortable to wear for extended periods.</p>
+            </div>
+            <div class="div-design">
+                <img id="card1" class="img-design animate" src="assets/img-design-1.png" alt="Fone JBL">
+                <img id="card2" class="img-design animate" src="assets/img-design-2.png" alt="Fone JBL">
+                <img id="card3" class="img-design animate" src="assets/img-design-3.png" alt="Fone JBL">
+            </div>
+        </section>
+        <section id="model">
+            <h2 class="animate">JBL Tune 520BT Others Model</h2>
+            <p class="animate">Explore Rhythm in Black, White and Blue: Headphones that Reflect Your Style, Your Color Choice, Your Sound World.</p>
+            <img class="img-model animate" id="img" src="assets/Black.png" alt="Headphone black">
+            <div class="btns animate">
+                <button id="btn-black"></button>
+                <button id="btn-white"></button>
+                <button id="btn-blue"></button>
+            </div>
+        </section>
+        <section id="form-feedback">
+            <div id="exp-headphone">
+                <div id="form-title">
+                    <h3>Leave your sound mark! Share your experience with our amazing headphone.</h3>
+                    <p><span>Your feedback</span> is music to our ears.</p>
+                </div>
+                <img src="assets/Music-bro.svg" alt="">
+            </div>
+            <form>
+                <label for="name" class="label-block">Name *</label>
+                <input type="text" class="inputs-decoration" id="name" placeholder="Type name" required>
+                
+                <label for="email" class="label-block">Email *</label>
+                <input type="email" class="inputs-decoration" id="email" placeholder="Type email" required>
+                
+                <label for="phone" class="label-block">Phone </label>
+                <input type="tel" class="inputs-decoration" id="phone" placeholder="Type phone number">
+
+                <label for="recommend" class="label-block">Would you recommend our headphone to others?</label>
+                <input type="checkbox" class="input-check" id="yes-recommend">
+                <label for="yes-recommend"  class="label-check">Yes, I would recommend the headphones</label><br/>
+                <input type="checkbox" class="input-check" id="no-recommend">
+                <label for="no-recommend" class="label-check">No. I wouldn't recommend the headphones</label>
+                
+                <label for="comment" id="label-comment" class="label-block">Comment </label>
+                <textarea id="comment" cols="10" rows="3" placeholder="Enter your comment here..."></textarea>
+
+                <button type="reset" class="btn-form" id="btn-reset">Reset</button>
+                <button type="submit" class="btn-form" id="btn-submit">Send feedback</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="footer-top">
+            <img class="img-footer" src="assets/logo-JBL.svg" alt="Logo JBL">
+            <nav>
+                <ul class="footer-pags">
+                    <li>Home</li>
+                    <li>Feature</li>
+                    <li class="add-content-product">Product</li>
+                    <li class="add-testimonial">Testimonial</li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="footer-social">
+                    <li>
+                        <a href="#"><img class="icon" src="assets/facebook.svg" alt="Facebook JBL"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon" src="assets/instagram.svg" alt="Instagram JBL"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon" src="assets/twitter-alt-circle.svg" alt="Twitter JBL"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon" src="assets/youtube.svg" alt="Youtube JBL"></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section id="footer-bottom">
+            <p>Direitos reservados a Alpha Edtech</p>
+            <p>Feito por &lt;/ Pedrosavio&gt;</p>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

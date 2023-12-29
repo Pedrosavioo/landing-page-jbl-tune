@@ -1,0 +1,357 @@
+#features {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-top: 4rem;
+}
+
+#features h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#features p{
+    color: var(--color-tertiary);
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#features div{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url("../assets/degradê\ \(1\).png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.img-feature{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.adc-img::after{
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: url('../assets/mobile-bluetooth.svg') no-repeat;
+    background-size: 300px 300px;
+    position: absolute;
+    top: 124%;
+    right: 2rem;
+    z-index: 3;
+}
+
+.adc-img::before{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 300px;
+    background: url('../assets/batery-mobile.svg') no-repeat;
+    background-size: 300px 300px;
+    position: absolute;
+    top: 165vh;
+    left: 0.5rem;
+    z-index: 3;
+}
+
+@media (min-width: 350px){
+    #features div{
+        width: 100vw;
+        background: url("../assets/degradê\ \(1\).png") no-repeat center;
+        background-size: 150% 100%;
+        margin-top: 1rem;
+    }
+
+    .adc-img::after{
+        top: 128%;
+    }
+}
+
+@media (min-width: 440px){
+    .adc-img::before{
+        left: 5rem;
+    }
+
+}
+
+@media (min-width: 486px){
+    #features div{
+        background-size: 100% 100%;
+    }
+
+    .adc-img::after{
+        right: 5rem;
+    }
+}
+
+@media (min-width: 565px){
+    .adc-img::after{
+        right: 7rem;
+    }
+}
+
+@media (min-width: 596px){
+
+    .adc-img::after{
+        right: 9rem;
+    }
+
+    .adc-img::before{
+        left: 9rem;
+    }
+}
+
+@media (min-width: 680px){
+    .adc-img::before{
+        left: 10rem;
+    }
+
+    .adc-img::after{
+        right: 11rem;
+    }
+}
+
+@media (min-width: 720px){
+    .adc-img::before{
+        left: 12rem;
+    }
+
+    .adc-img::after{
+        right: 13rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 750px){
+    .img-feature{
+        
+        width: 250px;
+        height: 350px;
+        
+        /*
+        width: 30vw;
+        height: 40vh;
+        */
+    }
+
+    /* imagem da direita*/
+    .adc-img::after{
+        width: 300px;
+        height: 300px;
+        background: url('../assets/desk-bluetooth.svg') no-repeat;
+        background-size: 300px 400px;
+        top: 120%;
+        right: 2rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        width: 300px;
+        height: 300px;
+        background: url('../assets/batery-desk.svg') no-repeat;
+        background-size: 300px 300px;
+        top: 140vh;
+        left: 2rem;
+    }
+}
+
+@media (min-width: 850px){
+    /* imagem da direita*/
+    .adc-img::after{
+        width: 350px;
+        height: 350px;
+        background-size: 300px 470px;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        width: 300px;
+        height: 300px;
+        background-size: 300px 300px;
+        left: 3rem;
+    }
+}
+
+@media (min-width: 900px){
+    .adc-img::before{
+        left: 5rem;
+    }
+}
+
+@media (min-width: 930px){
+    .adc-img::after{
+        right: 3rem;
+    }
+    .adc-img::before{
+        left: 6rem;
+    }
+}
+
+@media (min-width: 990px){
+    .img-feature{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+/* desktop*/
+@media (min-width: 990px){
+    /* imagem da direita*/
+    .adc-img::after:hover{
+        width: 500px;
+        height: 500px;
+        background-size: 390px 600px;
+        top: 115%;
+        right: -5rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        width: 500px;
+        height: 600px;
+        background-size: 460px 600px;
+        top: 125vh;
+        left: 1rem;
+    }
+}
+
+@media (min-width: 1045px){
+    #features div{
+        background-size: 60% 120%;
+    }
+
+
+    .adc-img::after{
+        width: 450px;
+        height: 500px;
+        background-size: 450px 600px;
+        top: 115%;
+        right: 0rem;
+    }
+}
+
+@media (min-width: 1100px){
+    /* imagem da direita*/
+    .adc-img::after{
+        right: 0rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        left: 3rem;
+    }
+}
+
+@media (min-width: 1180px){
+    /* imagem da direita*/
+    .adc-img::after{
+        right: 3rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        left: 6rem;
+    }
+}
+
+@media (min-width: 1260px){
+    /* imagem da direita*/
+    .adc-img::after{
+        right: 6rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        left: 8rem;
+    }
+}
+
+@media (min-width: 1300px){
+    /* imagem da direita*/
+    .adc-img::after{
+        right: 8rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        left: 10rem;
+    }
+}
+
+@media (min-width: 1360px){
+    /* imagem da direita*/
+    .adc-img::after{
+        right: 11rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        left: 12rem;
+    }
+}
+
+@media (min-width: 1440px){
+    #features div{
+        background-size: 60% 120%;
+    }
+
+    /* imagem da direita*/
+    .adc-img::after{
+        right: 11rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        left: 15rem;
+    }
+}
+
+@media (min-width: 1500px){
+    /* imagem da direita*/
+    .adc-img::after{
+        right: 13rem;
+    }
+}
+
+@media (min-width: 1560px){
+    /* imagem da direita*/
+    .adc-img::after{
+        right: 14rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        left: 18rem;
+    }
+}
+
+@media (min-width: 1600px){
+    /* imagem da direita*/
+    .adc-img::after{
+        width: 550px;
+        height: 500px;
+        background-size: 450px 600px;
+        top: 115%;
+        right: 11rem;
+    }
+    
+    /* imagem da esquerda*/
+    .adc-img::before{
+        width: 500px;
+        height: 600px;
+        background-size: 460px 600px;
+        top: 125vh;
+        left: 17rem;
+    }
+}
