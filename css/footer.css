@@ -10,7 +10,7 @@ footer{
 
 .img-footer{
     width: 10vw;
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: 2rem;
     border-radius: 0.3rem;
 }
@@ -21,11 +21,10 @@ footer{
 
 .footer-pags li{
     margin:5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     cursor: pointer;
 }
-
 
 .add-content-product:hover::after{
     content: "More product information";
@@ -59,7 +58,6 @@ footer{
 
 .footer-social li{
     font-size: 1.3rem;
-    text-align: center;
 }
 
 .icon{
@@ -74,6 +72,7 @@ footer{
 
 #footer-bottom p {
     margin-top: 1rem;
+    font-size: .8rem;
     color: var(--color-tertiary);
 }
 

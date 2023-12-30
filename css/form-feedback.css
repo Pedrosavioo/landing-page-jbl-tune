@@ -12,7 +12,7 @@
 #form-feedback p{
     margin-top: 1rem;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: .9rem;
 }
 
 #form-feedback img{
@@ -26,7 +26,7 @@
 
 .label-block{
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-top: 3rem;
 }
 
@@ -38,12 +38,12 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .inputs-decoration:focus{
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding-left: 1rem;
     border-bottom: 2px solid var(--color-prymary);
     transition: .2s;
@@ -51,7 +51,7 @@
 
 .input-check{
     margin-top: 1rem;
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .label-check{
@@ -83,10 +83,9 @@
 }
 
 .btn-form{
-    display: block;
+    border: 1px solid;
     padding: .5rem;
     border-radius: .5rem;
-    border: none;
     cursor: pointer;
     background-color: #ffdebb;
     color: var(--color-primary);
@@ -96,6 +95,10 @@
     background-color: var(--color-dark);
     color: var(--color-prymary);
     transition: .5s;
+}
+
+#btn-submit{
+    margin-left: .5rem;
 }
 
 
@@ -148,34 +151,14 @@
     }
 
     .label-block{
-        font-size: 1.2rem;
         margin-top: 0rem;
     }
     
     .inputs-decoration{
         margin-bottom: 1rem;
-        font-size: .8rem;
-    }
-    
-    .inputs-decoration:focus{
-        font-size: 1.1rem;
     }
 
     #label-comment{
         margin-top: 2rem;
-    }
-
-    .btn-form{
-        display: inline;
-        border: 1px solid;
-    }
-    
-    #btn-reset{
-        margin-top: 0;
-    }
-    
-    #btn-submit{
-        margin-top: 0;
-        margin-left: .5rem;
     }
 }
