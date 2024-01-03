@@ -1,17 +1,6 @@
-/*
-    .animate{
-        opacity: 0;
-        filter: blur(3px);
-        transition: 1s;
-    }
-
-    .animate-show{
-        filter: blur(0);
-        opacity: 1;
-    }
+/* Ferramenta para ajustar animation range:
+https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=0&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes
 */
-
-
 
 /* Testando animações */
 @keyframes scroll-left {
@@ -74,45 +63,42 @@
     }
 }
 
-/* HOME ===============================================================*/
-.surface{
-    animation: scroll-blur 1s ease-in-out;
-}
-
-.headphones{
-    animation: scroll-blur 1s ease-in-out;
-}
-
-.img-home{
-    animation: scroll-blur 3s ease-out;
-}
-
 /* FEATURE ============================================================*/
-#features h2{
-    animation: scroll-left 1s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+@media (min-width: 950px){
+    #features h2{
+        animation: scroll-left 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 50%;
+    }
+    
+    #features p{
+        animation: scroll-right 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 50%;
+    }
+    
+    #features img{
+        animation: scroll-top 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 50%;
+    }
+    
+    #features span::after{
+        animation: scroll-right 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 40%;
+    }
+    
+    #features span::before{
+        animation: scroll-left 1s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 40%;
+    }
 }
 
-#features p{
-    animation: scroll-right 1s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
-}
-
-.img-feature{
-    animation: scroll-top 1s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
-}
-
-.adc-img::after{
-    animation: scroll-blur 1s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
-}
 
 /* DESIGN =============================================================*/
+@media (min-width: 950px){
 #design h2{
     animation: scroll-left 1s ease-in-out;
     animation-timeline: view();
@@ -142,8 +128,10 @@
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
 }
+}
 
 /* MODELS =============================================================*/
+@media (min-width: 950px){
 #model h2{
     animation: scroll-left 1s ease-in-out;
     animation-timeline: view();
@@ -167,14 +155,10 @@
     animation-timeline: view();
     animation-range: cover 0% cover 10%;
 }
-
-/* MODELS =============================================================*/
-#form-feedback{
-    animation: scroll-blur 1s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
 }
 
+/* FORM =============================================================*/
+@media (min-width: 950px){
 #form-feedback h3{
     animation: scroll-top 1s ease-in-out;
     animation-timeline: view();
@@ -191,4 +175,5 @@
     animation: scroll-right 1s ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 25%;
+}
 }

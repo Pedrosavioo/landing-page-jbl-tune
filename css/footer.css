@@ -8,29 +8,34 @@ footer{
     background-color: var(--color-dark);
 }
 
-.img-footer{
+#img-footer{
     width: 10vw;
     margin-left: 40%;
     margin-top: 2rem;
     border-radius: 0.3rem;
 }
 
-.footer-pags{
+#footer-pags{
     list-style: none;
 }
 
-.footer-pags li{
+#footer-pags li{
     margin:5rem 0;
     font-size: 1.2rem;
     text-align: center;
     cursor: pointer;
 }
 
-.add-content-product:hover::after{
+#footer-pags a{
+    text-decoration: none;
+    color: var(--color-prymary);
+}
+
+#add-content-product:hover::after{
     content: "More product information";
     position: absolute;
-    top: 548%;
-    left: 50%;
+    top: 550vh;
+    left: 50vw;
     background-color: var(--color-prymary);
     padding: .5rem;
     border-radius: 1rem;
@@ -38,11 +43,11 @@ footer{
     font-size: .8rem;
 }
 
-.add-testimonial:hover::after{
+#add-testimonial:hover::after{
     content: "Explore Testimonials";
     position: absolute;
-    top: 548%;
-    left: 65%;
+    top: 550vh;
+    left: 64vw;
     background-color: var(--color-prymary);
     padding: .5rem;
     border-radius: 1rem;
@@ -50,13 +55,13 @@ footer{
     font-size: .8rem;
 }
 
-.footer-social{
+#footer-social{
     display: flex;
     gap: 1rem;
     list-style: none;
 }
 
-.footer-social li{
+#footer-social li{
     font-size: 1.3rem;
 }
 
@@ -78,22 +83,22 @@ footer{
 
 /* Tablet */
 @media (min-width: 750px){
-    .footer-pags{
+    #footer-pags{
         display: flex;
         width: 100vw;
         justify-content: space-around;
         list-style: none;
     }
 
-    .footer-social{
+    #footer-social{
         display: flex;
         justify-content: center;
-        padding-top: 2rem;
+        align-items: center;
         gap: 1rem;
         list-style: none;
     }
 
-    .img-footer{
+    #img-footer{
         width: 10vw;
         max-width: 80px;
         margin-left: 46%;
@@ -124,7 +129,7 @@ footer{
         justify-content: space-between;
         gap: 0.5rem;
     }
-    .footer-pags{
+    #footer-pags{
         display: flex;
         width: 60vw;
         justify-content: space-evenly;
@@ -132,12 +137,12 @@ footer{
         list-style: none;
     }
 
-    .footer-pags li{
+    #footer-pags li{
         padding-top: 1.5rem;
         font-size: 1.1rem;
     }
 
-    .footer-social{
+    #footer-social{
         display: flex;
         width: 20vw;
         height: 20vh;
@@ -154,7 +159,7 @@ footer{
     }
     
 
-    .img-footer{
+    #img-footer{
         width: 10vw;
         height: 10vh;
         max-height: 50px;

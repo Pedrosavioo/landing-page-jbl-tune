@@ -22,7 +22,7 @@
     color: var(--color-tertiary);
 }
 
-.div-design{
+#cards-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,7 @@
     margin-top: 2rem;
 }
 
-.img-design{
+.cards{
     width: 80%;
     height: 40vh;
     background-color: var(--color-dark);
@@ -39,7 +39,7 @@
     border-radius: 4rem;
 }
 
-@media (min-width: 990px){
+@media (min-width: 850px){
     #design {
         height: 100vh;
         justify-content: center;
@@ -49,8 +49,7 @@
         margin-bottom: 0rem;
     }
 
-
-    .div-design{
+    #cards-div{
         padding: 1rem;
         flex-direction: row;
         gap: 2rem;
@@ -58,13 +57,16 @@
         width: 90vw;
     }
 
-    .img-design{
-        width: 30%;
-        max-width: 300px;
-        height: 35vh;
+    .cards{
+        max-width: 250px;
+        height: 40vh;
         max-height: 400px;
-        background-color: var(--color-dark);
         padding: 4rem;
-        border-radius: 4rem;
+    }
+
+    .cards:hover{
+        transition: 1.5s;
+        transform: scale(1.1);
+        background-color: var(--color-prymary);
     }
 }

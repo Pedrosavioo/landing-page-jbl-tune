@@ -7,13 +7,13 @@ header{
     background-color: var(--color-dark);
 }
 
-.header__nav{
+header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.header__ul{
+header ul{
     list-style: none;
     display: flex;
     gap: 0.8rem;
@@ -22,18 +22,18 @@ header{
     margin-left: 1rem;
 }
 
-li a{
+.navigate{
     text-decoration: none;
     color: var(--color-tertiary);
 }
 
-li a:hover{
+.navigate:hover{
     color: var(--color-prymary);
     font-size: 1.5rem;
     transition: 1s;
 }
 
-.logo{
+#logo{
     margin-left: 1rem;
     width: 10vw;
     max-width: 50px;
@@ -43,14 +43,14 @@ li a:hover{
 
 /* Tablet */
 @media (min-width: 768px){
-    .header__nav{
+    header nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
     }
 
-    .header__ul{
+    header ul{
         font-size: 1.3rem;
         gap: 2rem;
     }
@@ -59,7 +59,7 @@ li a:hover{
 
 /* Desktop */
 @media (min-width: 960px){
-    .header__nav{
+    header nav{
         justify-content: space-between;
     }
 }

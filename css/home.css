@@ -5,94 +5,82 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    background: url("../assets/back-home-3.png") no-repeat;
-    background-size: 100% 100%;
-
     background: radial-gradient(circle, rgb(29, 28, 28) 39%, rgb(36, 37, 36) 55%, rgb(19, 18, 18) 88%);
 }
 
-.surface{
-    font-size: 6.5rem;
+#tune{
+    font-size: 4rem;
     position: relative;
     z-index: 3;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
     font-weight: 700;
     color: var(--color-secondary);
+    margin-top: 40%;
 }
 
-.headphones{
-    font-size: 4.5rem;
+#bt{
+    font-size: 5rem;
     font-weight: 800;
     z-index: 2;
+    margin-top: 5%;
 }
 
-.img-home{
+#home img{
     position: absolute;
     transform: rotateX(25deg);
-    height: 40vh;
+    height: 300px;
     z-index: 2;
+}
+
+@media (min-width: 500px){
+    #tune{
+        margin-top: 30%;
+    }
 }
 
 @media (min-width: 600px){
-
-    .surface{
-        font-size: 7.5rem;
-        margin-top: 10rem;
-        margin-bottom: 2rem;
+    #tune{
+        font-size: 5rem;
     }
     
-    .headphones{
-        font-size: 5.5rem;
-    }
-
-    .img-home{
-        height: 50vh;
+    #bt{
+        font-size: 6rem;
+        margin-top: 0;
     }
 }
 
 @media (min-width: 750px){
-    .surface{
-        font-size: 6.5rem;
-        margin-top: 18rem;
-        margin-bottom: 6rem;
-    }
-    
-    .headphones{
-        font-size: 6.5rem;
+    #tune{
+        font-size: 5.5rem;
+        margin-top: 25%;
     }
 
-    .img-home{
-        height: 70vh;
+    #home img{
+        height: 350px;
     }
-}
-
-@media (min-width: 600px){
-    
-}
-
-@media (min-width: 650px){
-    
 }
 
 @media (min-width: 900px){
-
-    .surface{
-        font-size: 6.5rem;
-        margin-top: 17rem;
+    #tune{
+        margin-top: 20%;
     }
     
-    .headphones{
-        font-size: 6.5rem;
+    #bt{
+        margin-top: 0;
     }
 }
-
 
 @media (min-width: 1100px){
+    #tune{
+        margin-top: 20%;
+        font-size: 6rem;
+    }
     
-}
+    #bt{
+        margin-top: 0;
+        font-size: 7rem;
+    }
 
-@media (min-width: 1300px){
-    
+    #home img{
+        height: 400px;
+    }
 }

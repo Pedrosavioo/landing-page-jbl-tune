@@ -19,3 +19,14 @@ body{
     width: 100vw;
     overflow-x: hidden;
 }
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--color-dark);
+}
+
+body::-webkit-scrollbar-thumb{
+    width: 10px;
+    border-radius: .5rem;
+    background-color: var(--color-prymary);
+}
