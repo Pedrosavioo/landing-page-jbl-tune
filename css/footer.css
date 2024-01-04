@@ -8,9 +8,13 @@ footer{
     background-color: var(--color-dark);
 }
 
+#align-img-footer{
+    display: flex;
+    justify-content: center;
+}
+
 #img-footer{
     width: 10vw;
-    margin-left: 40%;
     margin-top: 2rem;
     border-radius: 0.3rem;
 }
@@ -101,7 +105,6 @@ footer{
     #img-footer{
         width: 10vw;
         max-width: 80px;
-        margin-left: 46%;
         margin-top: 2rem;
         border-radius: 0.3rem;
     }
