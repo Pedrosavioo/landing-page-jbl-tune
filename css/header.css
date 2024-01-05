@@ -145,3 +145,9 @@ header nav{
         padding: 0;
     }
 }
+
+@media (min-width: 1600px){
+    header nav{
+        justify-content: space-evenly;
+    }
+}

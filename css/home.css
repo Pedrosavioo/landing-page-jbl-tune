@@ -54,8 +54,8 @@
     position: relative;
     z-index: 3;
     font-weight: 700;
+    padding-top: 8rem;
     color: var(--color-secondary);
-    margin-top: 40%;
     color: var(--color-tertiary);
 }
 
@@ -63,7 +63,7 @@
     font-size: 5rem;
     font-weight: 800;
     z-index: 2;
-    margin-top: 5%;
+    padding-top: 3rem;
 }
 
 #img-home{
@@ -139,7 +139,7 @@
 
 @media (min-width: 750px){
     #home {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     #tune{
