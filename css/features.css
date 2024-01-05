@@ -387,6 +387,17 @@
     }
 }
 
+@media (min-width: 1545px){
+    #features span::after{
+        right: 14rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 18rem;
+    }
+}
+
 @media (min-width: 1560px){
     /* imagem da direita*/
     #features span::after{
@@ -402,19 +413,131 @@
 @media (min-width: 1600px){
     /* imagem da direita*/
     #features span::after{
-        width: 550px;
-        height: 500px;
-        background-size: 450px 600px;
-        top: 115%;
-        right: 11rem;
+        right: 18rem;
     }
     
     /* imagem da esquerda*/
     #features span::before{
-        width: 500px;
-        height: 600px;
-        background-size: 460px 600px;
-        top: 125vh;
-        left: 17rem;
+        left: 20rem;
+    }
+}
+
+@media (min-width: 1690px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 21rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 23rem;
+    }
+}
+
+@media (min-width: 1800px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 24rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 26rem;
+    }
+}
+
+@media (min-width: 1890px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 27rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 29rem;
+    }
+}
+
+@media (min-width: 1960px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 29rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 32rem;
+    }
+}
+
+@media (min-width: 2040px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 32rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 35rem;
+    }
+}
+
+@media (min-width: 2150px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 35rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 38rem;
+    }
+}
+
+@media (min-width: 2260px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 38rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 41rem;
+    }
+}
+
+@media (min-width: 2330px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 41rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 44rem;
+    }
+}
+
+@media (min-width: 2440px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 44rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 47rem;
+    }
+}
+
+@media (min-width: 2500px){
+    /* imagem da direita*/
+    #features span::after{
+        right: 46rem;
+    }
+    
+    /* imagem da esquerda*/
+    #features span::before{
+        left: 49rem;
     }
 }
