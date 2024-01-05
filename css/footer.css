@@ -1,6 +1,5 @@
 footer{
     width: 100vw;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,8 +69,13 @@ footer{
 }
 
 .icon{
-    width: 2rem;
-    margin-left: 1.5rem;
+    width: 1.5rem;
+    margin: 0 .5rem;
+}
+
+.border-right{
+    border-right: 1px solid white;
+    padding-right: 1rem;
 }
 
 #footer-bottom{
@@ -89,13 +93,14 @@ footer{
 @media (min-width: 750px){
     #footer-pags{
         display: flex;
-        width: 100vw;
-        justify-content: space-around;
+        width: 100%;
+        justify-content: space-evenly;
         list-style: none;
     }
 
     #footer-social{
         display: flex;
+        width: 100vw;
         justify-content: center;
         align-items: center;
         gap: 1rem;
@@ -112,26 +117,31 @@ footer{
     #footer-bottom{
         display: flex;
         width: 100vw;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 2rem;
     }
 }
 
 /* Desktop */
-@media (min-width: 900px){
+@media (min-width: 1300px){
     footer{
-        height: 250px;
         padding-bottom: 2rem;
     }
 
     #footer-top{
-        width: 90vw;
-        padding: 0 2rem;
+        width: 100vw;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 0.5rem;
+        justify-content: center;
     }
+
+    #img-footer{
+        width: 10vw;
+        height: 10vh;
+        max-height: 50px;
+        margin-left: 0%;
+    }
+
     #footer-pags{
         display: flex;
         width: 60vw;
@@ -150,7 +160,7 @@ footer{
         width: 20vw;
         height: 20vh;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         padding-top: 2rem;
         gap: 1rem;
         list-style: none;
@@ -160,18 +170,37 @@ footer{
         width: 1.5rem;
         margin-left: .2rem;
     }
-    
-
-    #img-footer{
-        width: 10vw;
-        height: 10vh;
-        max-height: 50px;
-        margin-left: 0%;
-    }
 
     #footer-bottom{
         font-size: 0.8rem;
-        justify-content: space-between;
         padding: 0 6rem;
+    }
+
+    #footer-bottom div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1440px){
+    #footer-top{
+        width: 80vw;
+        max-width: 1500px;
+        justify-content: space-between;
+    }
+
+    #footer-pags{
+        width: 40vw;
+    }
+
+    #footer-social{
+        width: 15vw;
+    }
+
+    #footer-bottom{
+        width: 80vw;
+        max-width: 1500px;
+        padding: 0;
     }
 }

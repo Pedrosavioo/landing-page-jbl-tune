@@ -114,8 +114,9 @@ textarea:focus{
 /* Desktop */
 @media (min-width: 900px){
     #form-feedback{
+        height: 100vh;
         display: flex;
-        height: 90vh;
+        justify-content: space-evenly;
         gap: 3rem;
     }
 
@@ -147,5 +148,31 @@ textarea:focus{
 
     #label-comment{
         margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 1440px){
+
+    #exp-headphone{
+        margin-left: 8rem;
+    }
+
+    form{
+        margin-right: 8rem;
+    }
+}
+
+@media (min-width: 1700px){
+    #form-feedback{
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    #exp-headphone{
+        margin-left: 15rem;
+    }
+
+    form{
+        margin-right: 15rem;
     }
 }
