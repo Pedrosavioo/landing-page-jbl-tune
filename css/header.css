@@ -7,19 +7,15 @@ header{
     background-color: var(--color-dark);
 }
 
-header nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#mobile-menu-icon img{
+    width: 2.5rem;
+    height: 100%;
 }
 
-header ul{
-    list-style: none;
+header nav{
     display: flex;
-    gap: 0.8rem;
-    font-size: 0.95rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigate{
@@ -29,8 +25,6 @@ header ul{
 
 .navigate:hover{
     color: var(--color-prymary);
-    font-size: 1.5rem;
-    transition: 1s;
 }
 
 #logo{
@@ -41,8 +35,71 @@ header ul{
     border-radius: 0.3rem;
 }
 
+@media (max-width: 768px){
+    #mobile-menu-icon{
+        margin-right: 1rem;
+    }
+
+    #mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: none;
+        position: absolute;
+        background-color: var(--color-dark);
+        width: 50vw;
+        border-radius: 1rem;
+        right: 0;
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        list-style: none;
+        text-align: center;
+        margin-top: .5rem;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile li{
+        padding: 1rem 0;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
 /* Tablet */
 @media (min-width: 768px){
+    #menu-desktop{
+        display: flex;
+        list-style: none;
+        display: flex;
+        gap: 0.8rem;
+        font-size: 0.95rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    #mobile-menu-icon{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: none;
+    }
+
     header nav{
         display: flex;
         justify-content: space-between;
@@ -54,6 +111,10 @@ header ul{
         font-size: 1.3rem;
         gap: 2rem;
     }
+    
+    .navigate:hover{
+        color: var(--color-prymary);
+    }
 
 }
 
@@ -61,6 +122,18 @@ header ul{
 @media (min-width: 960px){
     header nav{
         justify-content: space-between;
+    }
+
+    #menu-desktop{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigate:hover{
+        color: var(--color-prymary);
+        font-size: 1.1rem;
+        transition: 1s;
     }
 }
 
