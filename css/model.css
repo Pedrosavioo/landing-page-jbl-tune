@@ -1,5 +1,5 @@
 #model {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
 
 #model img{
     width: 80%;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 2rem;
 }
 
@@ -55,7 +55,6 @@
 @media (min-width: 750px){
     #model img{
         width: 60%;
-        margin-top: 10vh;
         margin-bottom: 2rem;
     }
 }
@@ -63,8 +62,8 @@
 @media (min-width: 900px){
     #model img{
         width: 35%;
-        max-height: 600px;
-        margin-top: 10vh;
+        max-height: 480px;
+        max-width: 500px;
         margin-bottom: 2rem;
     }
 }

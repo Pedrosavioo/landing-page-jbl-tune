@@ -58,7 +58,7 @@
     }
 
     .cards{
-        max-width: 250px;
+        max-width: 280px;
         height: 40vh;
         max-height: 400px;
         padding: 4rem;
@@ -68,5 +68,11 @@
         transition: 1.5s;
         transform: scale(1.1);
         background-color: var(--color-prymary);
+    }
+}
+
+@media (min-width: 1440px){
+    #cards-div{
+        gap: 4rem;
     }
 }
